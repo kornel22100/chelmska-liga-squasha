@@ -1,0 +1,63 @@
+/* DONE */
+.home {
+  display: grid;
+  margin: 20px;
+  gap: 10px;
+}
+
+.article {
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  filter: drop-shadow(0 1px 2px hsla(236, 38%, 15%, 0.2));
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  background-color: hsl(0, 59%, 41%);
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  padding: 10px;
+}
+
+.article:hover {
+  filter: brightness(110%) drop-shadow(0 1px 2px hsl(223, 22%, 20%));
+  transform: rotate(0.3deg);
+}
+
+@media (min-width: 600px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home > a:first-of-type {
+    grid-area: 2 span / 2 span;
+  }
+
+  .home > a:first-of-type > .title {
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

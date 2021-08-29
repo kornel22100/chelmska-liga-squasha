@@ -1,0 +1,96 @@
+/* DONE */
+.footer {
+  background: hsl(223, 22%, 20%);
+  color: hsl(223, 31%, 84%);
+}
+
+.container {
+  display: grid;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px;
+}
+
+.contact {
+  align-items: center;
+  display: grid;
+  font-size: 1.8rem;
+  font-weight: 600;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  margin-right: 20px;
+}
+
+.socials {
+  align-items: flex-end;
+  color: #fff;
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a {
+  color: hsl(223, 31%, 84%);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  animation: shake 1s cubic-bezier(0.5, 0.55, 0.55, 0.6) both;
+}
+
+.line {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+  grid-area: 2 / span 2;
+  margin: 30px 0;
+}
+
+.regulations {
+  cursor: pointer;
+  text-align: end;
+}
+
+.facebook,
+.youtube {
+  align-items: center;
+  background-color: hsl(224, 15%, 23%);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  height: 50px;
+  justify-content: center;
+  transition: all 0.1s;
+  width: 50px;
+}
+
+.facebook:hover,
+.youtube:hover {
+  transform: scale(1.1);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}

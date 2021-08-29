@@ -1,0 +1,55 @@
+/* DONE */
+.places {
+  font-size: 1.4rem;
+  border: 1px solid black;
+}
+
+.places > div:nth-child(2n + 2) {
+  background: hsl(0, 6%, 94%);
+}
+
+.header,
+.row {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 3fr 1fr;
+}
+
+.header {
+  background: hsl(0, 59%, 41%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.row {
+  background: hsla(0, 59%, 41%, 0.1);
+}
+
+.cell {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.sets {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.scores {
+  display: grid;
+}
+
+.factor {
+  color: brown;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+.cell span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

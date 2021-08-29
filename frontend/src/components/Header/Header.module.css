@@ -1,0 +1,18 @@
+/* DONE */
+.header {
+  background: hsl(223, 22%, 20%);
+}
+
+.container {
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  width: 300px;
+  height: 40px;
+  background-image: url("../../Images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

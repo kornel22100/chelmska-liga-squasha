@@ -1,0 +1,39 @@
+/* DONE */
+.users {
+  border: 1px solid black;
+  font-size: 1.3rem;
+}
+
+.users > div:nth-child(2n + 2) {
+  background: hsl(0, 6%, 94%);
+}
+
+.header,
+.row {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+
+.header {
+  background: hsl(0, 59%, 41%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.row {
+  background: hsla(0, 59%, 41%, 0.1);
+}
+
+.cell {
+  border: 1px solid #000;
+  display: grid;
+  justify-content: center;
+  min-width: 0;
+  padding: 5px;
+}
+
+.cell span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

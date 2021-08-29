@@ -1,0 +1,45 @@
+/* DONE */
+.account {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 hsla(223, 22%, 20%, 0.2);
+  margin: 100px auto;
+  width: 400px;
+}
+
+.account form {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px;
+  text-align: center;
+}
+
+.account input {
+  background-color: hsl(218, 92%, 95%);
+  border: 1px solid hsl(234, 20%, 90%);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 20px;
+}
+
+.account input:focus {
+  border-color: hsla(223, 22%, 20%);
+}
+
+.account button {
+  background-color: hsla(223, 22%, 20%);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  padding: 20px;
+}

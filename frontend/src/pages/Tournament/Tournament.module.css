@@ -1,0 +1,18 @@
+/* DONE */
+.tournament {
+  margin: 20px;
+  display: grid;
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.tournament select {
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 1.6rem;
+}

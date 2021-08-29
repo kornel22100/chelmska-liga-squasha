@@ -1,0 +1,17 @@
+/* DONE */
+.messageBox {
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.error {
+  background-color: #ffe0e0e0;
+  color: #a02020;
+}
+
+.message {
+  background-color: #eeffe0;
+  color: #5aa020;
+}
